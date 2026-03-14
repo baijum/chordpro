@@ -14,7 +14,7 @@ A Python tool that converts [ChordPro](https://www.chordpro.org/) files to PDF m
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+pip install chordpro-pdf
 ```
 
 Requires Python 3.8+.
@@ -22,7 +22,7 @@ Requires Python 3.8+.
 ## Usage
 
 ```bash
-python -m chordpro input.cho -o output.pdf
+chordpro input.cho -o output.pdf
 ```
 
 ### Options
@@ -46,7 +46,7 @@ A[G]mazing [C]grace, how [G]sweet the sound
 {end_of_chorus}
 ```
 
-Chords are placed inline using `[ChordName]` notation. See [`sample.cho`](sample.cho) for a complete example.
+Chords are placed inline using `[ChordName]` notation. See [`sample.cho`](chordpro/sample.cho) for a complete example.
 
 ## License
 

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chordpro-pdf"
+version = "0.1.0"
+description = "Convert ChordPro files to PDF music sheets with ukulele chord diagrams"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Baiju Muthukadan", email = "baiju.m.mail@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+    "parsimonious>=0.10.0",
+    "reportlab>=4.0",
+]
+
+[project.scripts]
+chordpro = "chordpro.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/baijum/chordpro"
+Repository = "https://github.com/baijum/chordpro"
+
+[tool.setuptools.package-data]
+chordpro = ["sample.cho"]
