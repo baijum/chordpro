@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chordpro-pdf"
-version = "0.1.2"
-description = "Convert ChordPro files to PDF music sheets with ukulele chord diagrams"
+version = "0.2.0"
+description = "Convert ChordPro files to PDF or HTML music sheets with ukulele chord diagrams"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
@@ -35,6 +35,9 @@ chordpro = "chordpro.cli:main"
 [project.urls]
 Homepage = "https://github.com/baijum/chordpro"
 Repository = "https://github.com/baijum/chordpro"
+
+[tool.setuptools.packages.find]
+include = ["chordpro*"]
 
 [tool.setuptools.package-data]
 chordpro = ["sample.cho"]
