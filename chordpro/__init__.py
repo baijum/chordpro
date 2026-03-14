@@ -1,6 +1,6 @@
 """ChordPro to PDF converter."""
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 from .parser import ChordProParser
 from .renderer import render_pdf

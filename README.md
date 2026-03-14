@@ -30,7 +30,7 @@ chordpro input.cho -o output.pdf
 | Flag | Description |
 |------|-------------|
 | `-o`, `--output` | Output PDF path (defaults to `input.pdf`) |
-| `--page-size` | `letter` (default) or `a4` |
+| `--page-size` | `a4` (default) or `letter` |
 
 ## ChordPro Format
 

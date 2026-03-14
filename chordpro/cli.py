@@ -15,8 +15,8 @@ def main():
     parser.add_argument("input", help="Input ChordPro file (.cho, .chordpro)")
     parser.add_argument("-o", "--output", default=None, help="Output PDF file path")
     parser.add_argument(
-        "--page-size", choices=["letter", "a4"], default="letter",
-        help="Page size (default: letter)",
+        "--page-size", choices=["letter", "a4"], default="a4",
+        help="Page size (default: a4)",
     )
 
     args = parser.parse_args()
