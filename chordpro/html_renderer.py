@@ -99,6 +99,14 @@ body {
 }
 .chord-diagrams h3 { font-size: 1rem; margin-bottom: 0.5rem; }
 .diagram-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--chord-color);
+  text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
 """
 
 
@@ -123,6 +131,7 @@ class _HtmlSongRenderer:
         self.parts.append("</style>")
         self.parts.append("</head>")
         self.parts.append("<body>")
+        self.parts.append('<a href="index.html" class="back-link">&larr; Back to index</a>')
 
         self._render_metadata(meta)
         self._render_body(self.song.body)
